@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/image-removebg-preview (14).png">
+    <title>musica dos crias</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" id="nav-option-home">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                </div>
+                <div class="lib-box">   
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+            </div>
+
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" class="card-img" alt="card1img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+            </div>
+
+            <br>
+
+            <h2>Trending now near you</h2>
+            <div class="cards-container">
+                <div class="card" id="travis">
+                    <img src="img/travis.webp" class="card-img" alt="card1img">
+                    <p class="card-title">My Eyes - Travis Scott</p>
+                    <p class="card-info">"Look my eye tell me..."</p>
+                </div>
+                <div class="card" id="flow">
+                    <img src="img/flow.webp" class="card-img" alt="card1img">
+                    <p class="card-title">Don’t Copy My Flow - George Kipa</p>
+                    <p class="card-info">"African in a Western, na, na..."</p>
+                </div>
+                <div class="card" id="million">
+                    <img src="img/million.webp" class="card-img" alt="card1img">
+                    <p class="card-title">Million Dollar Baby</p>
+                    <p class="card-info">"Do it, baby, do what I should think..."</p>
+                </div>
+                <div class="card" id="beat">
+                    <img src="img/beat_it.webp" class="card-img" alt="card1img">
+                    <p class="card-title">Beat It - Michael Jackson</p>
+                    <p class="card-info">"Just beat it, just beat it..."</p>
+                </div>
+                <div class="card" id="paradise">
+                    <img src="img/paradaise.webp" class="card-img" alt="card1img">
+                    <p class="card-title">Paradise - Coldplay</p>
+                    <p class="card-info">"Paradise, paradise, paradise..."</p>
+                </div>
+                <div class="card" id="thefinal">
+                    <img src="img/Europe-The-final.png" class="card-img" alt="card1img">
+                    <p class="card-title">The Final Countdown - Europe</p>
+                    <p class="card-info">"It's The Final Countdown..."</p>
+                </div>
+                <div class="card" id="daylight">
+                    <img src="img/daylhigt.png" class="card-img" alt="card1img">
+                    <p class="card-title">Daylight - David Kushner</p>
+                    <p class="card-info">"I'm in love with the shape of you..."</p>
+                </div>
+                <div class="card" id="Anchor">
+                    <img src="img/anchorrr.png" class="card-img" alt="card1img">
+                    <p class="card-title">Anchor - Novo Amor</p>
+                    <p class="card-info">"So you're a tough guy, like it really rough guy..."</p>
+                </div>
+                <div class="card" id="mid">
+                    <img src="img/9k.png" class="card-img" alt="card1img">
+                    <p class="card-title">Midnight City - M83</p>
+                    <p class="card-info">"I got you, moonlight, you're my starlight..."</p>
+                </div>
+                <div class="card" id="sun">
+                    <img src="img/2Q.png" class="card-img" alt="card1img">
+                    <p class="card-title">Sunflower - POST MALONE</p>
+                    <p class="card-info">"I'm feelin' like a bullet, jumpin' out a gun..."</p>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <div class="footer">
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="music-player">
+        <div class="album">
+            <div class="name"></div>
+        </div>
+        <div class="player">
+            <audio id="audioPlayer" src="musica1.mp3"></audio>
+            <div class="player-controls">
+                <img src="./assets/player_icon2.png" class="player-control-icon" alt="player-control-icon0" id="rewindButton">
+                <img src="./assets/player_icon3.png" class="player-control-icon" alt="player-control-icon1" id="playButton">
+                <img src="./assets/image-removebg-preview (13).png" class="player-control-icon pause" alt="player-control-icon2" id="pauseButton">
+                <img src="./assets/player_icon4.png" class="player-control-icon" alt="player-control-icon3" id="nextButton">
+            </div>
+            <div class="playback-bar">
+                <span class="current-time">00:00</span>
+                <input type="range" min="0" max="100" aria-label="range" class="progress-bar" step="1">
+                <span class="tot-time">3:33</span>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="sound">
+                <input type="range" min="0" max="100" aria-label="range" class="sound-bar" step="1">
+                <img src="./assets/controls_icon5.png" class="controls_icon5" alt="controls_icon5">
+            </div>
+        </div>
+    </div>
+    <script src="musicas.js"></script>
+</body>
+</html>
